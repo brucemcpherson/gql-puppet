@@ -1,0 +1,24 @@
+{
+  "name": "gql-puppet",
+  "version": "1.0.0",
+  "description": "pupeteer as graphql cloud run service",
+  "main": "main.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bruce mcpherson",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/rate-limit": "^9.1.0",
+    "@graphql-tools/merge": "^9.0.4",
+    "@graphql-tools/schema": "^10.0.4",
+    "@graphql-tools/utils": "^10.2.2",
+    "fastify": "^4.28.0",
+    "fastify-rate-limit": "^5.9.0",
+    "got": "^14.4.1",
+    "graphql": "^16.9.0",
+    "mercurius": "^14.1.0",
+    "puppeteer": "^22.12.0"
+  }
+}
