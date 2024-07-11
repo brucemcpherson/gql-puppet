@@ -1,4 +1,8 @@
 const screenshotClip = `
+    x: Float
+    y: Float
+    height: Int
+    width: Int
     scale: Float
 `;
 
@@ -41,7 +45,7 @@ export const typeScreenshot = `
     mimeType: String
     base64Bytes: String
     viewport: Viewport
-    fullScreen: Boolean
     options: ScreenshotOptions
+    dataUri: String
   }
 `;

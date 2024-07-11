@@ -1,2 +1,11 @@
-**/node_modules
+
 **/private
+.env
+**/test
+**/node_modules
+.cache
+grant.sh
+deploy.sh
+cm.sh
+cloudbuild.yaml
+Dockerfile

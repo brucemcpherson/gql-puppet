@@ -1,6 +1,17 @@
 import {methods} from "./resolvers/methods.mjs"
-import {scalars} from "./resolvers/scalars.mjs"
+import { 
+  URLResolver, 
+  JSONResolver, 
+  EmailAddressResolver,
+  TimestampResolver
+ } from 'graphql-scalars';
+import { customScalars}  from "./resolvers/scalars.mjs"
+
 export const resolvers = {
-  ...scalars,
+  URL: URLResolver,
+  JSON:JSONResolver,
+  Timestamp: TimestampResolver,
+  EmailAddress:EmailAddressResolver,
+  ...customScalars,
   ...methods
 }

@@ -10,14 +10,25 @@ export const defaults = {
     quality: 100,
     type: "png"
   },
+  pdfOptions: {
+    displayHeaderFooter: false,
+    paperFormat: "A4",
+    landscape: false,
+    omitBackground: false,
+    outline: false,
+    preferCSSPageSize: false,
+    printBackground: true,
+    scale: 1.0,
+    tagged: true,
+    timeout: 30000,
+    emulateMediaType: "print"
+  },
   screenshotOptions: {
     captureBeyondViewport: false,
     encoding: "base64",
-    clip: {
-      scale: 1
-    },
     fromSurface: false,
     fullPage: false,
-    omitBackground: false
+    omitBackground: false,
+    type: "png"
   },
 };

@@ -1,0 +1,7 @@
+**/private
+**/test
+.env
+README.md
+.git
+**/node_modules
+.cache
