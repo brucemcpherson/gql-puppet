@@ -12,6 +12,15 @@ const getBrowser = async (options) => {
   return _browser;
 };
 
+export const closeBrowser = async() => {
+  if (_browser) {
+    const b = _browser
+    _browser = null
+    return b.close()
+  }
+  return null
+}
+
 const getDataUri = (parent) => {
   if (!parent) return null;
   const { base64Bytes, mimeType } = parent;
